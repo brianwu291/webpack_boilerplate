@@ -27,7 +27,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      hash: false,
+      hash: true,
       title: "React Setup",
       template: "./public/index.html",
       filename: "index.html"

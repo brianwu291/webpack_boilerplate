@@ -1,5 +1,9 @@
 import React from "react"
 import ReactDOM from "react-dom"
+import styled from 'styled-components'
+
+const Wrapper = styled.div``
+const Button = styled.button``
 
 class App extends React.Component {
   state = { data: 'hello' }
@@ -15,8 +19,8 @@ class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div>{this.state.data}</div>
-        <button onClick={this.handleClick}>click</button>
+        <Wrapper>{this.state.data}</Wrapper>
+        <Button onClick={this.handleClick}>click</Button>
       </React.Fragment>
     )
   }
