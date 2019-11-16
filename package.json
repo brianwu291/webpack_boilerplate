@@ -7,7 +7,8 @@
     "dev": "webpack-dev-server --config ./webpack.dev.js --open",
     "build": "rm -rf build && mkdir build && webpack --config ./webpack.prod.js",
     "scss": "node-sass --watch styles -o css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test-watch": "jest --watchAll"
   },
   "author": "Brian Wu",
   "license": "ISC",
@@ -22,6 +23,7 @@
     "file-loader": "^4.2.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
     "mini-css-extract-plugin": "^0.8.0",
     "style-loader": "^1.0.0",
     "webpack": "^4.41.2",
@@ -32,6 +34,7 @@
   "dependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "node-sass": "^4.13.0",
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "sass-loader": "^8.0.0"
