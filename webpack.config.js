@@ -2,7 +2,12 @@ const path = require("path")
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: path.resolve('src', 'index.js'),
+  output: {
+    path: path.resolve(__dirname, "build"),
+    publicPath: '/',
+    filename: "bundle.[contentHash].js"
+  },
   module: {
     rules: [
       {
@@ -29,8 +34,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       title: "React Setup",
-      template: "./public/index.html",
-      filename: "index.html"
+      template: path.resolve('public', 'index.html'),
+      filename: 'index.html',
+      minify: {
+        collapseWhitespace: true,
+        minifyCSS: true,
+        removeComments: true
+      }
     })
   ]
 }
