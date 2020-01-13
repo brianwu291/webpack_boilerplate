@@ -45,6 +45,7 @@
     "redux": "^4.0.4",
     "redux-thunk": "^2.3.0",
     "sass-loader": "^8.0.0",
+    "serialize-javascript": "^2.1.2",
     "styled-components": "^4.4.1"
   }
 }
