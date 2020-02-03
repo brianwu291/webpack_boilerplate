@@ -33,7 +33,6 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       hash: true,
-      title: "React Setup",
       template: path.resolve('public', 'index.html'),
       filename: 'index.html',
       minify: {

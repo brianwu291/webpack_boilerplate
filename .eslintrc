@@ -1,0 +1,23 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb"],
+  "plugins": [
+    "react",
+    "styled-components-config"
+  ],
+  "globals": {
+    "window": true,
+    "document": true,
+    "FileReader": true
+  },
+  "rules": {
+    "semi": [2, "never"],
+    "max-len": [1, 200, 2, { "ignoreComments": true }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/forbid-prop-types": 0,
+    "react/prop-types": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/destructuring-assignment": [0, "never"],
+    "react/state-in-constructor": [0, "never"]
+  }
+}
