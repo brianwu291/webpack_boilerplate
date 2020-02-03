@@ -6,7 +6,7 @@ Command
 
 Development
 $ git clone https://github.com/brianwu291/webpack_boilerplate.git
-$ nvm use 10.13.0
+$ nvm use 10.13.0+
 $ yarn install
 $ yarn dev
 
